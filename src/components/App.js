@@ -13,14 +13,16 @@ const App = () => {
   console.log(data)
   return (
     <div>
+      <ol>
       {
         data && data.map((data,i) => (
-          <div key={i}>
+          <li key={i}>
             <h2>{data.title}</h2>
             <p>{data.body }</p>
-          </div>
+          </li>
         ))
-      }
+        }
+      </ol>
     </div>
   )
 }
