@@ -13,16 +13,16 @@ const App = () => {
   console.log(data)
   return (
     <div>
-      <ol>
+      <ul type="none">
       {
         data && data.map((data,i) => (
           <li key={i}>
-            <h2>{data.title}</h2>
+            <h2>{i+1}. {data.title}</h2>
             <p>{data.body }</p>
           </li>
         ))
         }
-      </ol>
+      </ul>
     </div>
   )
 }
